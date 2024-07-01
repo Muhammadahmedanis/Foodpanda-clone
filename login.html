@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="closeTab"><i class="fa-solid fa-x"></i></div>
+            <h2>Login</h2>
+            <div id="signupForm">
+
+                <label>Email</label>
+                <input type="email" id="lemail" name="email" required>
+
+                <label>Password</label>
+                <input type="password" id="lpassword" name="password" required>
+
+                <div class="buttons">
+                    <button id="ladmin" type="button" class="btn-admin">Login as Admin</button>
+                    <button type="button" class="btn-user">Login as User</button>
+                </div>
+            </div>
+            <p class="login-link">Don't have an account? <a href="signup.html">Sign Up now</a></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
