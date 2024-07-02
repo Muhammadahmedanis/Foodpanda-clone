@@ -3,13 +3,21 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.visi{
+    display: block !important; 
+    /* margin: auto !important; */
+ }
 .container {
     height: 100%;
     /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.signupPosi{
+    position: absolute;
+    top: 79px;
 }
 
 .closeTab{
@@ -166,6 +174,7 @@ section{
 }
 .sec1{
     padding-top: 70px;
+    position: relative;
 }
 .img1{
     height: 385px;
@@ -266,11 +275,6 @@ footer{
     color: #e21b71b3;
     font-family: auto;
 }
-/* .fa-facebook-f{
-    background-color: #3b5998;
-    color: white;
-} */
-
 
 li{
     list-style: none;
@@ -354,9 +358,8 @@ li{
     padding: 10px 27px;
 }
 .checkoutSec{
-    margin-top: 75px;
+    margin-top: 75px;      
     background-color: #eddddd24;
-    /* background-color: ; */
 }
 #checkoutFormInp{
     padding: 4px 0;
@@ -369,4 +372,47 @@ li{
     font-size: 26px;
     padding: 0 5px;
     color: #E21B70;
+}
+.loader{
+    width: 95px;
+}
+.loader-container{
+    background-color: #E21B70;
+}
+
+
+.homeSec1{
+    border: 2px solid black;
+    height: 400px;
+    margin-top: 5%;
+}
+
+.homeCardSec{
+    border: 1px solid rgb(104, 104, 104);
+    /* height: 290px; */
+    width: 300px;
+}
+
+.homeCardSec:hover{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cardImg{
+    height: 180px;
+    width:  298px;
+}
+.addtoCartimg, .fa-bag-shopping{
+    font-size: 17px;
+    background-color: #E21B70;
+    padding: 2px 7px;
+    height: fit-content;
+    color: white;
+    cursor: pointer;
+}
+.col{
+    color: #E21B70;
+}
+.font{
+    font-family: auto;
 }

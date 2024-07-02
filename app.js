@@ -1,8 +1,20 @@
-var closeTab = document.querySelector(".closeTab")
-closeTab.addEventListener("click", () =>{
-   document.querySelector(".container").style.display = "none"
+let scon =  document.querySelector(".s-con")
+if(scon){
+    function clk() {
+        scon.setAttribute("class", "visi");
+        document.querySelector(".form-container").style.display = "block"
+    }
+}
 
-})
+var closeTab = document.querySelector(".closeTab")
+if(closeTab){
+    closeTab.addEventListener("click", () =>{
+        document.querySelector(".form-container").style.display = "none"
+        // let scon =  document.querySelector(".s-con")
+        scon.setAttribute("class", "d-none s-con container");
+        
+    })
+}
 
 let getUser = () => {
     let users = localStorage.getItem("data");
@@ -64,6 +76,7 @@ let login =  () => {
 }
 let signUp = document.getElementById("signUp");
 var ladmin = document.getElementById("ladmin");
+
 if(signUp)
 {
     signUp.addEventListener("click", func)
@@ -74,4 +87,3 @@ else
 }
 // let sadmin = document.getElementById("sadmin");
 // sadmin.addEventListener("click", func)
-
