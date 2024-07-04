@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+  
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="d-flex" role="search">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add new product</button>
+        <button id="goHome" class="ms-2 btn btn-primary" >Go Home Page</button>
+      </div>
+    </div>
+  </nav> 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod Image:</label>
+            <input type="text" class="form-control" id="prodImg">
+          </div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod Title :</label>
+            <input type="text" class="form-control" id="prodTitle">
+          </div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod review:</label>
+            <input type="text" class="form-control" id="prodReview">
+          </div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod orders:</label>
+            <input type="text" class="form-control" id="prodOrders">
+          </div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod Price:</label>
+            <input type="text" class="form-control" id="prodPrice">
+          </div>
+          <div class="mb-3">
+            <label class="col-form-label">Prod description:</label>
+            <textarea class="form-control" id="prodDes"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="addItem" type="button" class="btn btn-primary">Add Item</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="fastFoodSec" class="d-flex flex-wrap justify-content-center gap-4">
+
+</div>
+
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
