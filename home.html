@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
 
@@ -20,11 +20,7 @@
                 <a class="navbar-brand">foodpanda</a>
             </div>
             <div class="d-flex">
-                <div class="d-flex gap-2 btns">
-                    <button id="login" class="btn" type="submit">Login</button>
-                    <button onclick="clk()" id="signup" class="btn" type="submit">Sign up</button>
-                </div>
-                <i class="fa-regular fa-user"></i>
+                <button id="addtocartbtn" class="btn" type="submit">Proceed to cart<i class="text-white fa-solid fa-arrow-right-long"></i></button>
                 <img class="mx-3" src="./images/shopping-cart (1).svg" alt="">
                 <div class="my-badge" id="cartNo">
                     0
@@ -47,80 +43,80 @@
                         <div class="card cardcrousel swiper-slide me-2 cardslidewidth">
                             <div class="d-flex gap-2 p-1 px-2 py-2">
                                 <div class="p-1">
-                                    <h4 id="cartName" class="fw-bold">Krunch Combo</h4>
-                                    <p id="cartPrice" class="mb-1 cardFSize">from Rs. 550</p>
+                                    <h4 class="fw-bold cartName">Krunch Combo</h4>
+                                    <p class="mb-1 cardFSize cartPrice">from Rs. 550</p>
                                     <p class="mb-0 cardF2Size">Enjoy a crispy crunchy chicken fillet on a bed of lettuce
                                     </p>
                                 </div>
-                                <div class="">
-                                    <img id="cartImg" class="rounded"
+                                <div>
+                                    <img class="rounded cartImage"
                                         src="https://images.deliveryhero.io/image/fd-pk/Products/2066905.png?width=150&height=150"
                                         alt="">
                                 </div>
                             </div>
-                            <div id="addToCart" class="crouselCart">
-                                <span class="addtoCartimg rounded border">Add<i
-                                        class="text-white pe-0 fa-solid fa-bag-shopping"></i>
-                            </div>
+                            <button class="crouselCart addToCart">
+                                <span class="addtoCartimg py-1 rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
 
                         <div class="card cardcrousel swiper-slide me-2 cardslidewidth">
                             <div class="d-flex gap-2 p-1 px-2 py-2">
                                 <div class="p-1">
-                                    <h4 class="fw-bold">Family Festival</h4>
-                                    <p class="mb-1 cardFSize">from Rs. 2,090</p>
-                                    <p class="mb-1 cardF2Size">4 Burger, 4 pieces chicken, 2 dinner roll and litre Drink
-                                    </p>
+                                    <h4 class="fw-bold cartName">Family Festival</h4>
+                                    <p  class="mb-1 cardFSize cartPrice">from Rs. 2,090</p>
+                                    <p class="mb-1 cardF2Size">4 Burger, 4 pieces chicken, 2 dinner roll and litre Drink </p>
                                 </div>
                                 <div class="">
-                                    <img class="rounded"
+                                    <img class="rounded cartImage"
                                         src="https://images.deliveryhero.io/image/fd-pk/Products/1912746.png?width=150&height=150"
                                         alt="">
                                 </div>
                             </div>
-                            <div class="crouselCart">
-                                <span class="addtoCartimg rounded border">Add<i
-                                        class="text-white pe-0 fa-solid fa-bag-shopping"></i>
-                            </div>
+                            <button class="crouselCart addToCart">
+                                <span class="addtoCartimg py-1 rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
 
                         <div class="card cardcrousel swiper-slide me-2 cardslidewidth">
                             <div class="d-flex gap-2 p-1 px-2 py-2">
                                 <div class="p-1">
-                                    <h4 class="fw-bold">Exclusive Deal</h4>
-                                    <p class="mb-1 cardFSize">from Rs. 1,450</p>
-                                    <p class="mb-1 cardF2Size">2 Crispy Chicken or Chicken Burger & 2 Beef Rolls</p>
+                                    <h4 class="fw-bold cartName">Family Festival</h4>
+                                    <p class="mb-1 cardFSize cartPrice">from Rs. 2,090</p>
+                                    <p class="mb-1 cardF2Size">4 Burger, 4 pieces chicken, 2 dinner roll and litre Drink
+                                    </p>
                                 </div>
-                                <div class="">
-                                    <img class="rounded"
-                                        src="https://images.deliveryhero.io/image/fd-pk/Products/23230933.jpg?width=150&height=150"
+                                <div>
+                                    <img class="rounded cartImage"
+                                        src="https://images.deliveryhero.io/image/fd-pk/Products/1912746.png?width=150&height=150"
                                         alt="">
                                 </div>
                             </div>
-                            <div class="crouselCart">
-                                <span class="addtoCartimg rounded border">Add<i
-                                        class="text-white pe-0 fa-solid fa-bag-shopping"></i>
-                            </div>
+                            <button class="crouselCart addToCart">
+                                <span class="addtoCartimg py-1 rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button> 
                         </div>
 
                         <div class="card cardcrousel swiper-slide me-2 cardslidewidth">
                             <div class="d-flex gap-2 p-1 px-2 py-2">
                                 <div class="p-1">
-                                    <h4 class="fw-bold">Pepsi Deal</h4>
-                                    <p class="mb-1 cardFSize">from Rs. 570</p>
+                                    <h4 class="fw-bold cartName">Pepsi Deal</h4>
+                                    <p class="mb-1 cardFSize cartPrice">from Rs. 570</p>
                                     <p class="mb-1 cardF2Size">Krunch Burger with Hot & Crispy Chicken Piece & 345ml
                                         Drink</p>
                                 </div>
-                                <div class="">
-                                    <img class="rounded"
+                                <div>
+                                    <img class="rounded cartImg"
                                         src="https://images.deliveryhero.io/image/fd-pk/Products/15405182.jpeg?width=150&height=150"
                                         alt="">
                                 </div>
                             </div>
-                            <div class="crouselCart">
-                                <span class="addtoCartimg rounded border">Add<i
-                                        class="text-white pe-0 fa-solid fa-bag-shopping"></i>
-                            </div>
+                            <button class="crouselCart addToCart">
+                                <span class="addtoCartimg py-1 rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -133,456 +129,443 @@
 
     </section>
 
-    <section class="">
+    <section id="se1">
         <div class="mt-2 p-1">
             <p class="fw-bold fs-1 text-center col mb-1">All restaurants</p>
         </div>
 
-        <div class="mb-3">
+        <!-- <div class="mb-3"> -->
             <h3 class="fw-bold ps-2 fs-1 font">Fast<i class="fa-solid fa-burger"></i>Food</h3>
             <div id="fastFoodSec" class="d-flex flex-wrap justify-content-center gap-4">
 
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                    <img class="rounded h-100 w-100"
+                    <img id="cardImg" class="rounded h-100 w-100 cartImage"
                     src="https://images.deliveryhero.io/image/fd-pk/LH/lqt7-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">75 Degrees Hot-PECHS</p>
+                            <p id="cardName" class="px-1 fw-bold mb-1 cartName>75 Degrees Hot-PECHS</p>
                             <span class="px-1">4.6</span>
                             <span>(500+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                            class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p id="cardPrice" class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/v4av-listing.jpg?width=400&height=225"
-                            alt="">
+                        <img class="rounded h-100 w-100 cartImage"
+                        src="https://images.deliveryhero.io/image/fd-pk/LH/v4av-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Kaka food Chapli Kabab</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Kaka food Chapli Kabab</p>
                             <span class="px-1">4.8</span>
                             <span>(5000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/g4r4-listing.jpg?width=400&height=225"
-                            alt="">
+                        <img class="rounded h-100 w-100 cartImage"
+                        src="https://images.deliveryhero.io/image/fd-pk/LH/g4r4-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Caesar's Pizza</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Caesar's Pizza</p>
                             <span class="px-1">4.5</span>
                             <span>(1000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/l5gd-listing.jpg?width=400&height=225"
-                            alt="">
+                        <img class="rounded h-100 w-100 cartImage"
+                        src="https://images.deliveryhero.io/image/fd-pk/LH/l5gd-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Yellow Taxi Pizza</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Yellow Taxi Pizza</p>
                             <span class="px-1">4.6</span>
                             <span>(3000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/pk1t-listing.jpg?width=400&height=225"
-                            alt="">
+                        <img class="rounded h-100 w-100 cartImage"
+                        src="https://images.deliveryhero.io/image/fd-pk/LH/pk1t-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">OPTP Bahdurabad</p>
+                            <p class="px-1 fw-bold mb-1 cartName">OPTP Bahdurabad</p>
                             <span class="px-1">4.8</span>
                             <span>(2000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/s2mc-listing.jpg?width=400&height=225"
-                            alt="">
+                        <img class="rounded h-100 w-100 cartImage"
+                        src="https://images.deliveryhero.io/image/fd-pk/LH/s2mc-listing.jpg?width=400&height=225"alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Tooso Bahdurabad</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Tooso Bahdurabad</p>
                             <span class="px-1">4.8</span>
                             <span>(10000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
+        <!-- </div> -->
 
 
         <div>
-            <h3 class="fw-bold ps-2 fs-1 font">Ice<i class="fa-solid fa-ice-cream"></i>Cream</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
+            <h3 class="fw-bold ps-2 fs-1 my-3 font">Ice<i class="fa-solid fa-ice-cream"></i>Cream</h3>
+            <div id="icecreamSec" class="d-flex flex-wrap justify-content-center gap-4">
 
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/pb21-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Sweet Creme</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Sweet Creme</p>
                             <span class="px-1">4.9</span>
                             <span>(1000+)</span>
                         </div>
-                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
-                            nemo eaqui facere rerum quia sequi nobis.</p>
+                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/t9ov-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Havmore Ice Cream</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Havmore Ice Cream</p>
                             <span class="px-1">4.9</span>
                             <span>(5000+)</span>
                         </div>
-                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
-                            nemo eaqui facere rerum quia sequi nobis.</p>
+                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/u1vd-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Baskin Robbins</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Baskin Robbins</p>
                             <span class="px-1">4.8</span>
                             <span>(1000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/qviw-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Kaybees Creamy Bar</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Kaybees Creamy Bar</p>
                             <span class="px-1">4.8</span>
                             <span>(100+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/h043-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Khalis Ice Cream</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Khalis Ice Cream</p>
                             <span class="px-1">4.9</span>
                             <span>(1000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/ts4u-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Qulfi Wala</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Qulfi Wala</p>
                             <span class="px-1">4.6</span>
                             <span>(100+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="homeCardSec rounded mb-2">
-                    <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/gxti-listing.jpg?width=400&height=225"
-                            alt="">
-                    </div>
-                    <div>
-                        <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Dominos-MACHS</p>
-                            <span class="px-1">4.8</span>
-                            <span>(500+)</span>
-                        </div>
-                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
-                            nemo eaqui facere rerum quia sequi nobis.</p>
-                        <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
 
         <div>
-            <h3 class="fw-bold ps-2 fs-1 font">Beverages<i class="fa-solid fa-bottle-droplet"></i></h3>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
+            <h3 class="fw-bold ps-2 fs-1 font my-3">Beverages<i class="fa-solid fa-bottle-droplet"></i></h3>
+            <div id="beverageSec" class="d-flex flex-wrap justify-content-center gap-4">
 
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/ooox-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Scream</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Scream</p>
                             <span class="px-1">4.8</span>
                             <span>(100+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/fqjo-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Thirsty The Soda Shop</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Thirsty The Soda Shop</p>
                             <span class="px-1">4.9</span>
                             <span>(1000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/a9yb-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">1 Degree Centigrade</p>
+                            <p class="px-1 fw-bold mb-1 cartName">1 Degree Centigrade</p>
                             <span class="px-1">4.8</span>
                             <span>(1000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/omir-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Blend Coffee</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Blend Coffee</p>
                             <span class="px-1">4.9</span>
                             <span>(100+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/si37-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Greeno-Bahdurabad</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Greeno-Bahdurabad</p>
                             <span class="px-1">4.9</span>
                             <span>(3000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="homeCardSec rounded mb-2">
                     <div class="cardImg">
-                        <img class="rounded h-100 w-100"
+                        <img class="rounded h-100 w-100 cartImage"
                             src="https://images.deliveryhero.io/image/fd-pk/LH/weta-listing.jpg?width=400&height=225"
                             alt="">
                     </div>
                     <div>
                         <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Drop Coffee</p>
+                            <p class="px-1 fw-bold mb-1 cartName">Drop Coffee</p>
                             <span class="px-1">5</span>
                             <span>(5000+)</span>
                         </div>
                         <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
                             nemo eaqui facere rerum quia sequi nobis.</p>
                         <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
+                            <p class="fw-bold cartPrice">400 Rs</p>
+                            <button class="ca addToCart">
+                                <span class="addtoCartimg rounded border">Add<i
+                                class="text-white pe-0 fa-solid fa-bag-shopping"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="homeCardSec rounded mb-2">
-                    <div class="cardImg">
-                        <img class="rounded h-100 w-100"
-                            src="https://images.deliveryhero.io/image/fd-pk/LH/gxti-listing.jpg?width=400&height=225"
-                            alt="">
-                    </div>
-                    <div>
-                        <div class="d-flex px-2 mt-2">
-                            <p class="px-1 fw-bold mb-1">Dominos-MACHS</p>
-                            <span class="px-1">4.8</span>
-                            <span>(500+)</span>
-                        </div>
-                        <p class="px-2 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut velit eveniet
-                            nemo eaqui facere rerum quia sequi nobis.</p>
-                        <div class="d-flex justify-content-between px-2 mb-1">
-                            <p class="fw-bold">400 Rs</p>
-                            <span class="addtoCartimg rounded border">Add<i
-                                    class="text-white pe-0 fa-solid fa-bag-shopping"></i></span>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="cart.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

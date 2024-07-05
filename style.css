@@ -134,15 +134,15 @@ body, html {
 .btn{
     border: 2px solid #e21b70;
     color: white;
-    padding: 4px 20px;
-    height: 37px
+    /* padding: 4px 20px; */
+    /* height: 37px */
 }
 
-#signup, #checkoutbtn{
+#signup, #checkoutbtn, #addtocartbtn, #orderbtn{
     background-color: #E21B70;
     font-weight: 700;
 }
-#signup:hover, #checkoutbtn:hover{
+#signup:hover, #checkoutbtn:hover, #addtocartbtn:hover, #orderbtn:hover{
     color: #fff;
 }
 #login{
@@ -164,6 +164,19 @@ body, html {
     .fa-user{
         display: block !important;
         margin-left: 8px;
+    }
+    #addtocartbtn{
+        font-size: 9px !important; 
+    }
+    .fa-arrow-right-long{
+        font-size: 11px !important;
+        vertical-align: middle !important;
+    }
+    .navbarImg{
+        margin-left: 0px !important;
+    }
+    h3{
+        text-align: center;
     }
 }
 
@@ -410,6 +423,7 @@ li{
     height: fit-content;
     color: white;
     cursor: pointer;
+    /* border-radius: 4px; */
 }
 .col{
     color: #E21B70;
@@ -443,6 +457,9 @@ li{
     top: -16px;
     left: 15px;
     width: fit-content;
+    border: none;
+    outline: none;
+    padding: 0;
 }
 
 .image-content, .card-content{
@@ -461,6 +478,15 @@ li{
     width: 396px !important;
     padding: 3px;
 }
+.ca{
+    height: fit-content;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+.ca > span {
+    padding: 6px;
+}
 @media (max-width: 500px) {
     .cardslidewidth{
         width: 306px !important;
@@ -469,7 +495,7 @@ li{
         font-size: 71% !important;
     }
     .crouselCart{
-        padding-top: 12px;
+        margin-top: 11px;
     }
 }
 .w{
