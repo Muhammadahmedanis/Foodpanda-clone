@@ -3,13 +3,17 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.visi{
+
+ /* .no{
+    display: none;
+ } */
+/* .visi{
     display: block !important; 
-    /* margin: auto !important; */
- }
+ } */
+
+/* siup & login */
 .container {
     height: 100%;
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,15 +22,6 @@ body, html {
 .signupPosi{
     position: absolute;
     top: 79px;
-}
-
-.closeTab{
-    float: right;
-}
-
-.fa-x{
-    font-size: 21px;
-    cursor: pointer;
 }
 
 .form-container {
@@ -134,8 +129,6 @@ body, html {
 .btn{
     border: 2px solid #e21b70;
     color: white;
-    /* padding: 4px 20px; */
-    /* height: 37px */
 }
 
 #signup, #checkoutbtn, #addtocartbtn, #orderbtn{
@@ -152,18 +145,14 @@ body, html {
     border: 2px solid #e21b70;
 }
 .fa-user{
-    display: none !important;
+    /* display: none !important; */
     color: #E21B70;
-    font-size: 40px;
+    font-size: 35px !important;
 }
 
 @media (max-width: 500px) {
     .btns{
         display: none !important;
-    }
-    .fa-user{
-        display: block !important;
-        margin-left: 8px;
     }
     #addtocartbtn{
         font-size: 9px !important; 
@@ -180,10 +169,10 @@ body, html {
     }
 }
 
+/* section */
 section{
     padding-right:30px !important;
     padding-left:30px !important;
-    /* background-color: #F5F7F8; */
 }
 .sec1{
     padding-top: 70px;
@@ -195,7 +184,6 @@ section{
 
 /*  */
 .divCard > div{
-    /* border: 2px solid black; */
     height: 300px;
     width: 303px;
     position: relative;
@@ -222,7 +210,6 @@ section{
 }
 
 .img3{
-    /* margin-top: -70px; */
     height: 450px;
 }
 
@@ -232,12 +219,9 @@ section{
 }
 .sec3div{
     height: 90px;
-    /* width: 390px; */
 }
 .downloadimg > div{
     height: 115px;
-    /* width: 140px; */
-    /* border: 2px solid black; */
 }
 
 
@@ -261,7 +245,6 @@ section{
     }
     .navbarCart{
         justify-content: center !important;
-        /* display: contents; */
     }
     .totalCart{
         width: auto !important;
@@ -315,7 +298,6 @@ li{
     border-radius: 7px;
 }
 #plusbtn, #minusbtn{
-    /* font-size: 20px; */
     background-color: #E21B70;
     color: white;
 }
@@ -324,7 +306,6 @@ li{
     border: none;
     outline: none;
     background-color: white;
-    /* margin-left: 25px; */
 }
 .cartp{
     font-size: 18px;
@@ -334,8 +315,6 @@ li{
 .totalCart{
     border-radius: 10px;
     padding: 10px 0;
-    /* border: 2px solid black;
-    height: 200px; */
     width: 400px;
     margin: auto;
     background-color: #e6498d;
@@ -362,11 +341,10 @@ li{
     padding: 0 8px;
 }
 
-/* checkout */
+/* checkout page */
 .checkoutDiv{
     border: 1px solid black;
     height: auto !important;
-    /* width: fit-content; */
     width: 400px;
     padding: 10px 27px;
 }
@@ -394,16 +372,14 @@ li{
 }
 
 
+/* home page */
 .homeSec1{
-    /* border: 2px solid black; */
-    /* height: 400px; */
     margin-top: 5%;
     padding-left: 15px !important;
 }
 
 .homeCardSec{
     border: 1px solid rgb(104, 104, 104);
-    /* height: 290px; */
     width: 300px;
 }
 
@@ -423,7 +399,6 @@ li{
     height: fit-content;
     color: white;
     cursor: pointer;
-    /* border-radius: 4px; */
 }
 .col{
     color: #E21B70;
@@ -436,9 +411,7 @@ li{
 /*  */
 
 .slide-container{
-    /* max-width: 1120px; */
     width: 100%;
-    /* padding: 40px 0; */
 }
 .slide-content{
     margin: 0px 40px;
@@ -447,7 +420,6 @@ li{
 }
 
 .cardcrousel{
-    /* width: 320px; */
     border-radius: 25px;
     background-color: #fff;
     height: auto !important;
@@ -505,9 +477,6 @@ li{
     font-size: 17px;
     font-family: cursive;
 }
-/* .card-wrapper{
-    height: 183px;
-} */
 .cardF2Size{
     font-size: 14px;
     color: #707070;
@@ -518,7 +487,6 @@ li{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    /* border-radius: 50%; */
 }
 .name{
     font-size: 18px;
@@ -564,6 +532,8 @@ li{
 left: 0;
 }
 
+
+/*  */
 .price{
     font-size: 21px;
 }
@@ -575,14 +545,6 @@ left: 0;
     border: 1px solid #D2B298;
     width: 190px;
 }
-/* .container{
-    width: 1000px;
-}
-@media (max-width: 580px) {
-    .container{
-        width: auto;
-    }   
-} */
 .imgprod > img{
     height: 300px;
 }

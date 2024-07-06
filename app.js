@@ -16,12 +16,13 @@ if(closeTab){
     })
 }
 
-let ladmin;
+
 let getUser = () => {
     let users = localStorage.getItem("data");
     if(users)
     {
         users = JSON.parse(users)
+        console.log(users);
     }
     else 
     {
@@ -30,66 +31,101 @@ let getUser = () => {
 
     return users;
 }
-
-
-let func = () => {
     
-    let suser = document.getElementById("susername");
-    let semail = document.getElementById("semail");
-    let spass = document.getElementById("spassword");   
-    if(suser.value.trim().length != 0 && semail.value.trim().length != 0 && spass.value.trim().length != 0)
-        {
-            let users = getUser();
 
-            var user = {
-                email: semail.value,
-                pass: spass.value,
+ let func = () => {
+        
+        let suser = document.getElementById("susername");
+        let semail = document.getElementById("semail");
+        let spass = document.getElementById("spassword");   
+        if(suser.value.trim().length != 0 && semail.value.trim().length != 0 && spass.value.trim().length != 0)
+            {
+                let users = getUser();
+    
+                var user = {
+                    user: suser.value,
+                    email: semail.value,
+                    pass: spass.value,
+                }
+                users.push(user);
+                localStorage.setItem("data", JSON.stringify(users));
+                location.href = "login.html";
             }
-            users.push(user);
-            localStorage.setItem("data", JSON.stringify(users))
-            location.href = "login.html";
-        }
-        else
-        {
-            alert("field is empty")
-        }
-        semail.value = '';
-        spass.value = '';
-        suser.value = '';
-}
+            else
+            {
+                alert("field is empty")
+            }
+            semail.value = '';
+            spass.value = '';
+            suser.value = '';
+    }
 
 let login =  () => {
+    let userName = document.getElementById("userName")
     let lemail = document.getElementById("lemail");
     let lpass = document.getElementById("lpassword");    
     let users = getUser();
-
     users.filter((val) => {
         if(lemail.value == val.email && lpass.value == val.pass)
-        {
-            console.log(val);
-            alert("login success");
-            location.href = "admin.html";
+            {
+                console.log(val);
+                alert("login success");
+                location.href = "index.html";
+                // if(userName){
+                //     userName.innerHTML = `<span>${val.user}</span>`;
+                //     console.log(userName);   
+                // }
+            }
+        else{
+            alert("invalid input")
         }
     })
 
-    // lemail.value = '';
-    // lpass.value = '';
+    lemail.value = '';
+    lpass.value = '';
+}
 
-}
-let signUp = document.getElementById("signUp");
-ladmin = document.getElementById("ladmin");
+   
+let sAdmin = document.getElementById("sAdmin");
+let sUser = document.getElementById("sUser");
+let lUser = document.getElementById("lUser");
+let lAdmin = document.getElementById("lAdmin");
 
-if(signUp)
+if(sAdmin)
 {
-    signUp.addEventListener("click", func)
-    
+    sAdmin.addEventListener("click",()=>{
+        func();
+    })
 }
-else if(ladmin)
+
 {
-    ladmin.addEventListener("click", login);
+if(sUser)
+    {
+        sUser.addEventListener("click", ()=>{
+            func();
+        })
+    }    
+        if(lAdmin){
+            lAdmin.style.display = "none";
+        } 
+        if(lUser){
+            lUser.style.margin = "auto";
+        }
 }
-// let sadmin = document.getElementById("sadmin");
-// sadmin.addEventListener("click", func)
+if(lAdmin)
+{
+    lAdmin.addEventListener("click", ()=>{
+        login();
+        location.href = "admin.html";    
+    })
+}
+if(lUser)
+    {
+        lUser.addEventListener("click", ()=>{
+            login();
+            location.href = "index.html";
+    })
+}
 
 
 
