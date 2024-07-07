@@ -144,10 +144,11 @@ body, html {
 #login:hover{
     border: 2px solid #e21b70;
 }
-.fa-user{
+.fa-user, .fa-utensils{
     /* display: none !important; */
     color: #E21B70;
     font-size: 35px !important;
+    cursor: pointer;
 }
 
 @media (max-width: 500px) {

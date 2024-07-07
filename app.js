@@ -43,12 +43,12 @@ let getUser = () => {
                 let users = getUser();
     
                 var user = {
-                    user: suser.value,
                     email: semail.value,
                     pass: spass.value,
                 }
                 users.push(user);
                 localStorage.setItem("data", JSON.stringify(users));
+                localStorage.setItem("userN", suser.value);
                 location.href = "login.html";
             }
             else
@@ -61,7 +61,6 @@ let getUser = () => {
     }
 
 let login =  () => {
-    let userName = document.getElementById("userName")
     let lemail = document.getElementById("lemail");
     let lpass = document.getElementById("lpassword");    
     let users = getUser();
@@ -127,7 +126,12 @@ if(lUser)
     })
 }
 
-
+let goHome = document.querySelector(".fa-utensils")
+if(goHome){
+    goHome.addEventListener("click", () =>{
+        location.href = "home.html";
+    })
+}
 
 // Cart Section
 let cartArr = JSON.parse(localStorage.getItem("storeCardData")) || [];

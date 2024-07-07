@@ -110,41 +110,6 @@ if(minusbtn){
         })
 }
 
-if(!window.isDOMLoaded)
-{
-    window.isDOMLoaded = false;
-    document.addEventListener("DOMContentLoaded", () => {
-    window.isDOMLoaded = true;
-    const loaderProgress = document.querySelectorAll(".loader-container");
-    let orderbtn = document.getElementById("orderbtn");
-    if(orderbtn)
-        {
-            orderbtn.addEventListener("click", () =>{
-            let width1 = 0;
-            let width2 = 0;
-            let pro1 = setInterval(() => {
-            width1++;
-            loaderProgress[0].style.width = width1 + "%";
-            if(width1 >= 100)
-                {
-                    clearInterval(pro1);
-                    alert("deleiver to rider");
-                    let pro2 = setInterval(() => {
-                    width2++;
-                    loaderProgress[1].style.width = width2 + "%";
-                    if(width2 >= 100)
-                        {
-                            clearInterval(pro2);
-                            alert("Deleiver to coustomer")
-                        }
-                        }, 100)
-                }
-                }, 100)
-            })
-        }
-    })
-}
-
 
 if(document.querySelector(".slide-content")){
     swiper = new Swiper(".slide-content", {
