@@ -18,7 +18,7 @@ if (!window.isDOMLoaded) {
                     
                     order.push(userOrderDetail);
                     sessionStorage.setItem("orderData", JSON.stringify(userOrderDetail));
-                    
+
                     let width1 = 0;
                     let width2 = 0;
                     let pro1 = setInterval(() => {
@@ -26,20 +26,30 @@ if (!window.isDOMLoaded) {
                         loaderProgress[0].style.width = width1 + "%";
                         if (width1 >= 100) {
                             clearInterval(pro1);
-                            alert("deleiver to rider");
+                            Swal.fire({
+                                title: "Deleiver to rider",
+                                icon: "success"
+                              });
                             let pro2 = setInterval(() => {
                                 width2++;
                                 loaderProgress[1].style.width = width2 + "%";
                                 if (width2 >= 100) {
                                     clearInterval(pro2);
-                                    alert("Deleiver to Coustomer")
+                                    Swal.fire({
+                                        title: "Deleiver to Customer",
+                                        icon: "success"
+                                      });
                                 }
                             }, 100)
                         }
                     }, 100)
                     }
                     else {
-                            alert("Enter your details")
+                        Swal.fire({
+                          title: "Missing?",
+                          text: "Enter your Details",
+                          icon: "question"
+                        });
                         }
             })
         }
@@ -48,8 +58,5 @@ if (!window.isDOMLoaded) {
 
 let order = JSON.parse(sessionStorage.getItem("orderData")) || [];
 console.log(order);
-// if(order){
-// }
-
 
 
