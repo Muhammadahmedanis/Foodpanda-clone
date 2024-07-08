@@ -131,11 +131,11 @@ body, html {
     color: white;
 }
 
-#signup, #checkoutbtn, #addtocartbtn, #orderbtn{
+#signup, #checkoutbtn, #addtocartbtn, #orderbtn, #logoutbtn{
     background-color: #E21B70;
     font-weight: 700;
 }
-#signup:hover, #checkoutbtn:hover, #addtocartbtn:hover, #orderbtn:hover{
+#signup:hover, #checkoutbtn:hover, #addtocartbtn:hover, #orderbtn:hover, #logoutbtn:hover{
     color: #fff;
 }
 #login{
@@ -145,7 +145,6 @@ body, html {
     border: 2px solid #e21b70;
 }
 .fa-user, .fa-utensils{
-    /* display: none !important; */
     color: #E21B70;
     font-size: 35px !important;
     cursor: pointer;
@@ -153,7 +152,7 @@ body, html {
 
 @media (max-width: 500px) {
     .btns{
-        display: none !important;
+        /* display: none !important; */
     }
     #addtocartbtn{
         font-size: 9px !important; 
@@ -298,8 +297,8 @@ li{
     font-size: 21px;
     border-radius: 7px;
 }
-#plusbtn, #minusbtn{
-    background-color: #E21B70;
+.plusbtn, .minusbtn{
+    background-color: #E21B70 !important;
     color: white;
 }
 .cartbtn{
