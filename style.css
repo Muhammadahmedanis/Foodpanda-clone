@@ -164,6 +164,12 @@ body, html {
     h3{
         text-align: center;
     }
+    .navbar-brand{
+        display: none;
+    }
+    .carousel-item > img{
+        height: 125px;
+    }
 }
 
 /* section */
@@ -210,10 +216,10 @@ section{
     height: 450px;
 }
 
-.img4{
+/* .img4{
     height: 100%;
     width: 100%;
-}
+} */
 .sec3div{
     height: 90px;
 }
