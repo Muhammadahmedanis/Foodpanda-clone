@@ -2,7 +2,7 @@ let logoutbtn = document.getElementById("logoutbtn");
 if(logoutbtn)
 {
     logoutbtn.addEventListener("click", () => {
-        window.location.href = "signup.html";
+        window.location.href = "index.html";
         localStorage.clear();
     })
 }
@@ -100,7 +100,7 @@ if (lAdmin) {
 if (lUser) {
     lUser.addEventListener("click", () => {
         login();
-        location.href = "index.html";
+        location.href = "main.html";
     })
 }
 
@@ -228,10 +228,9 @@ if (addItem) {
     })
 }
 
-let goHomePage = document.getElementById("goHome");
-if (goHomePage) {
-    goHomePage.addEventListener("click", () => {
-        location.href = "home.html";
-    })
-}
-
+// let goHomePage = document.getElementById("goHome");
+// if (goHomePage) {
+//     goHomePage.addEventListener("click", () => {
+//         location.href = "home.html";
+//     })
+// }

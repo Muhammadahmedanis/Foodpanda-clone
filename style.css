@@ -151,9 +151,6 @@ body, html {
 }
 
 @media (max-width: 500px) {
-    .btns{
-        /* display: none !important; */
-    }
     #addtocartbtn{
         font-size: 9px !important; 
     }

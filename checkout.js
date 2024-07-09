@@ -1,6 +1,7 @@
 let orderUserName = document.getElementById("orderUserName");
 let orderUserNo = document.getElementById("orderUserNo");
 let orderUserAdd = document.getElementById("orderUserAdd");
+let order = JSON.parse(sessionStorage.getItem("orderData")) || [];
 if (!window.isDOMLoaded) {
     window.isDOMLoaded = false;
     document.addEventListener("DOMContentLoaded", () => {
@@ -38,7 +39,9 @@ if (!window.isDOMLoaded) {
                                     Swal.fire({
                                         title: "Deleiver to Customer",
                                         icon: "success"
-                                      });
+                                      }).then(() => {
+                                        location.href = "main.html"
+                                    })
                                 }
                             }, 100)
                         }
@@ -49,14 +52,13 @@ if (!window.isDOMLoaded) {
                           title: "Missing?",
                           text: "Enter your Details",
                           icon: "question"
-                        });
+                        })
                         }
             })
         }
     })
 }
 
-let order = JSON.parse(sessionStorage.getItem("orderData")) || [];
 console.log(order);
 
 

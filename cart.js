@@ -58,6 +58,7 @@ let totalItems = 0;
 let totalPrice = 0;
 
 // Event delegation for plus and minus buttons
+if(show){
 show.addEventListener('click', (event) => {
     if (event.target.classList.contains('plusbtn') || event.target.classList.contains('minusbtn')) {
         const index = event.target.dataset.index;
@@ -81,7 +82,7 @@ show.addEventListener('click', (event) => {
         totalCost.innerText = totalPrice.toFixed(2);
     }
 });
-
+}
 let addToCart = document.querySelectorAll(".addToCart");
 if (addToCart) {
     addToCart.forEach((button, index) => {
