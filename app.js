@@ -7,6 +7,13 @@ if(logoutbtn)
     })
 }
 
+let goHome = document.querySelector(".fa-utensils")
+if (goHome) {
+    goHome.addEventListener("click", () => {
+        location.href = "home.html";
+    })
+}
+
 
 let getUser = () => {
     let users = localStorage.getItem("data");

@@ -1,9 +1,3 @@
-let goHome = document.querySelector(".fa-utensils")
-if (goHome) {
-    goHome.addEventListener("click", () => {
-        location.href = "home.html";
-    })
-}
 
 // Cart Section
 let fastFoodSec = document.getElementById("fastFoodSec");
