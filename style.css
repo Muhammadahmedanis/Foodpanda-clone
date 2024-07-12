@@ -17,6 +17,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(123.5deg, rgb(244, 219, 251) 29.3%, rgb(255, 214, 214) 67.1%);
 }
 
 .signupPosi{
@@ -25,7 +26,8 @@ body, html {
 }
 
 .form-container {
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255, 0.8); */
+    background: linear-gradient(243deg, rgb(255, 253, 221) 13.4%, rgb(248, 215, 215) 82.1%);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -64,11 +66,14 @@ body, html {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    color: rgba(29, 28, 28, 0.756);
+    font-weight: 600;
 }
 
 .buttons button:hover {
@@ -76,7 +81,8 @@ body, html {
 }
 
 .buttons .btn-admin {
-    background-color: #f44336;
+    background: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+    /* background-color: #f44336; */
 }
 
 .buttons .btn-admin:hover {
@@ -412,6 +418,11 @@ li{
 
 
 /*  */
+.card-wrapper{
+    margin: 0px 10px 0 11px;
+    gap: 5px;
+}
+
 
 .slide-container{
     width: 100%;
@@ -450,7 +461,7 @@ li{
 }
 
 .cardslidewidth{
-    width: 396px !important;
+    width: 395px !important;
     padding: 3px;
 }
 .ca{
@@ -587,4 +598,17 @@ left: 0;
 
 .car{
     width: -webkit-fill-available !important;
+}
+
+/* admin */
+.adminUpdBtn, .adminDelBtn{
+    border: none;
+    outline: none;
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: #ff4d9add;
+    color: gainsboro;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 5px;
 }
